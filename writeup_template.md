@@ -25,7 +25,7 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I used the gaussian blur to smooth down the image, then i set the thresholds for the canny edge detection and ran the function on the smoothed down gray image, then i set the vertices fo rmy region of interest after a lot of trying and tuning after that i used the hough lines function to detect the lines in my region of interest (of which i tuned the parameters with testing), lastly i used the weighted image function to layer the lines that are detected and drawn over the original image.
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by first calculating the slopes of the lines then removing any lines with irrelevant slopes (reducing jittering) then separating the right and left lane lines by slope then using the polyfit method to average the lines and then drawing only two lines on the image
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
