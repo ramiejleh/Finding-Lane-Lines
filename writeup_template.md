@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./test_images/output_image.jpg
 
 ---
 
@@ -27,7 +27,7 @@ My pipeline consisted of 5 steps. First, I converted the images to grayscale, th
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by first calculating the slopes of the lines then removing any lines with irrelevant slopes (reducing jittering) then separating the right and left lane lines by slope then using the polyfit method to average the lines and then drawing only two lines on the image
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+The result image:
 
 ![alt text][image1]
 
